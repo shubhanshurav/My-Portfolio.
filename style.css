@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Diplomata+SC&family=Poppins:wght@400;500;600;700&family=Titan+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+text-align: center;
+   background-image: url(img/back.jpg); 
+}
+
+/* create Home & Navbar section */
+
+.container{
+   width:100vw;
+   height:100%;
+   background-repeat: no-repeat;
+   background-position:top;
+}
+
+.sec-1{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mynav{
+   width: 100vw;
+   position: sticky;
+   top: 0;
+   background-size: cover;
+   background-color: crimson;
+   opacity: 0.73;
+}
+
+.nav{
+  height: 100%;
+  width: 100vw;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.main{
+    display: flex;
+}
+
+.main ul{
+    width: 100vw;
+    text-align: center;
+    list-style: none;
+    padding: 12px;
+}
+
+.main ul li{
+   display: inline-block;
+}
+.main ul li a{
+    width: 25vw;
+    font-size: 16px;
+    padding: 29px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main ul li a:hover{
+    color:#000000;
+     font-weight: bold;
+}
+
+.left{
+   width: 45vw;
+   height: 100vh;
+   font-family:cursive;
+}
+
+.myname{
+    margin: 220px 0;   
+}
+
+.myname h1{
+    font-size: 51px;
+    color: crimson;
+    text-align: center;
+}
+
+.myname h2{
+    font-size: 41px;
+    color: white;
+    text-align: center;
+}
+
+.myname h3{
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.myname button{
+    border-radius: 39px;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 9px;
+    margin: 18px;
+    font-family: cursive;
+    background-color:crimson;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.myname button a{
+    color: black;
+    text-decoration: none;
+}
+
+.myname button a:hover{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.myname button:hover{
+    background-color:rgb(231, 237, 243);
+}
+
+.right{
+    width: 55vw;
+    height: 100vh;
+    /* background-color: rgb(201, 9, 9); */
+ }
+
+
+.mypic{
+    float: left;
+    margin: 100px 0; 
+    /* margin: 32px 0;  */
+}
+
+.mypic img{
+    height: 750px;                    
+    width: 100%;
+    align-items: center;
+    border-radius: 168px;   
+    border: 6px solid crimson;
+}
+
+/* start certificate section */
+
+.sec-3{
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    background-color: rgba(0,0,0,0.7);
+    /* background-image: url(img/back.jpg); */
+    background-repeat: no-repeat;
+}
+
+.heading1{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.heading1 h1{
+    padding-top: 30px;
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.maincertificate{
+    padding: 28px;
+    text-align: center;
+}    
+
+.mycertificate{
+    padding: 12px;
+    display: inline-block;
+}
+
+.mycertificate img{
+    height: 100%;
+    width: 25vw;
+}
+
+.mycertificate .firstcertificate{
+    height: 100%;
+    width: 26vw;
+}
+
+
+/* footer style0 */
+
+.myfooter{
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+    color: white;
+}
+
+.myfooter span{
+    font-size: 16px;
+   font-family: cursive;    
+}
+
+
+
+
+/* Restponsive Design */
+ 
+@media(max-width:1000px){
+    
+   
+
+    .left{
+        width: 45vw;
+        padding-left: 30px;
+    }
+
+    .right{
+        width: 45vw;
+    }
+    
+    .myname{
+        margin: 100px 0;
+     }
+
+    .myname h1{
+        font-size: 36px;
+    }
+    
+    .myname h2{
+        font-size: 32px;
+    }
+    
+    .myname h3{
+        font-size: 18px;
+    }
+    
+    .buttons{
+        text-align: center;
+    }
+    
+    .myname button{
+        font-size: 14px;
+        padding: 12px;
+    }
+      
+
+    .mypic{
+        margin: 55px 0; 
+    }
+    
+    .mypic img{
+        height: 100%;                        
+        width: 70%;
+        border-radius: 20%;  
+    }
+
+
+.sec-3{
+   height: 260vh;
+   width: 100vw;
+}
+
+    .maincertificate{
+        width: 100vw;
+    } 
+
+    .mycertificate{
+        padding: 10px;
+        display: inline-block;
+    }
+
+    .mycertificate img{
+        height: 100%;
+        width: 50vw;
+    }
+    .mycertificate .firstcertificate{
+        height: 100%;
+        width: 50vw;
+    }
+    .myfooter{
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width:614px) {
+    
+   .main ul li a{
+        font-size: 11px;
+        padding: 11px;
+    }
+
+    .sec-3{
+        height: 160vh;
+        width: 100vw;
+     }
+
+     .heading1 h1{
+        font-size: 25px;
+     }
+
+    .left{
+        width: 40vw;
+    }
+
+    .right{
+        width: 45vw;
+    }
+
+    .mypic img{
+        height: 100%;                        
+        width: 90%;
+        border-radius: 20%;  
+    }
+    
+    .myname h1{
+        font-size: 23px;
+    }
+    
+    .myname h2{
+        font-size: 23px;
+    }
+    
+    .myname h3{
+        font-size: 13px;
+    }
+
+    .myname button{
+        font-size: 14px;
+        padding: 9px;
+    }
+    
+}    
+
+
+@media (max-width:450px){
+      
+    /* NAVBAR */
+    
+    .main ul li a{
+        font-size: 11px;
+        padding: 11px;
+    }
+
+    
+    /* SECTION-1 */
+     .sec-1{
+        height: 52vh;
+     }
+
+     .left{
+        padding: 15px;
+     }
+      
+    .myname{
+        margin: 100px 0;
+     }
+
+    .myname h1{
+        font-size: 18px;
+    }
+    
+    .myname h2{
+        font-size: 13px;
+    }
+    
+    .myname h3{
+        font-size: 7px;
+    }
+    
+    .buttons{
+        text-align: center;
+    }
+    
+    .myname button{
+        font-size: 10px;
+        padding: 5px;
+    }   
+
+    .mypic{
+        margin: 83px 0; 
+    }
+    
+    .mypic img{
+        height: 100%;                        
+        width: 95%;
+        border-radius: 20%;  
+    }
+    
+
+    /* Section-3 */
+
+    .sec-3{
+        height: 120vh;
+    }
+     
+    .heading1{
+        padding: 14px;
+    }
+
+    .heading1 h1{
+        font-size: 25px;
+        font-weight: bold;
+        padding: 15px;
+    }
+
+    .maincertificate{
+        text-align: center;
+    }
+
+    .mycertificate{
+        padding: 10px;
+        display: inline-block;
+    }
+
+    .mycertificate img{
+        height: 100%;
+        width: 70vw;
+    }
+    .mycertificate .firstcertificate{
+        height: 100%;
+        width: 70vw;
+    }
+    
+    .myfooter{
+        width: 100%;
+    }
+
+    .myfooter span{
+        font-size: 8px;
+    }
+
+    
+}
