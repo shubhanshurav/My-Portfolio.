@@ -6,8 +6,8 @@
 }
 
 body{
-text-align: center;
-   background-image: url(img/back.jpg); 
+   text-align: center;
+   background-image: url(img/back.jpg) no-repeat; 
 }
 
 /* create Home & Navbar section */
